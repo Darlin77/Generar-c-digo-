@@ -1,0 +1,4 @@
+{
+  "name": "bug-bot-whatsapp",  "version": "1.0.0",  "description": "Un bot de WhatsApp para causar caos con bugs para Android e iOS",  "main": "bot.js",  "scripts": {
+    "start": "node bot.js",    "server": "node server.js"  },  "dependencies": {
+    "@whiskyjs/baileys": "latest",    "pino": "latest",    "qrcode-terminal": "latest",    "express": "latest"  },  "author": "Martinezios",  "license": "ISC"}
