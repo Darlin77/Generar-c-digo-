@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Bug Bot WhatsApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #1a1a1a;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }        input, button {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }        button {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }    </style>
+</head>
+<body>
+    <h1>Bug Bot para WhatsApp</h1>
+    <p>Ingresa tu número de WhatsApp para generar un código de conexión y empieza a usar el bot más destructivo.</p>
+    <input type="text" id="numero" placeholder="Ejemplo: +1234567890">    <button onclick="generarCodigo()">Generar Código</button>
+    <p id="resultado"></p>
+
+    <script>
+        function generarCodigo() {
+            const numero = document.getElementById('numero').value;
+            if (numero) {
+                // Simulación de generación de código (en un entorno real, esto sería dinámico)                document.getElementById('resultado').innerText = `Código generado para ${numero}: Usa este QR para conectar el bot (escanea desde WhatsApp).`;            } else {
+                document.getElementById('resultado').innerText = 'Por favor, ingresa un número válido.';            }        }    </script>
+</body>
+</html>
